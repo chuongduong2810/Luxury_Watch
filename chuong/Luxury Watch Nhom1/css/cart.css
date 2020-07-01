@@ -1,0 +1,109 @@
+.product-page-title{
+	margin-top: 4rem;
+	background: #4a4a4a;
+	padding: 4rem 4rem 2rem 4rem;
+	color: #fff;
+	text-align: center;
+}
+
+.product-page-title h1{
+	font-weight: bold;
+}
+
+.cart{
+	margin-top: 5rem;
+}
+
+.product-action{
+	margin-top: auto; 
+}
+
+.product-action a{
+	margin-left: auto;
+	display: block;
+	color: #fff;
+	background:#2fce98;
+	width: 20%;
+	border: 1px solid rgba(128,128,128,0.1);
+	padding: 0.5rem;
+	text-align: center;
+	font-size: 1.5rem;
+	transition: 0.5s all;
+	text-decoration: none;
+}
+
+.product-action a:hover{
+	background: #21966f;
+}
+
+.cart-table{
+	overflow-x: auto;
+}
+
+.cart-table table{
+	width: 100%;
+	text-align: center;
+
+}
+
+.cart-table table tr{
+	border-bottom: 1px solid rgba(128,128,128,0.2);
+	padding: 1rem 0;
+}
+
+.cart-table table tr th,
+{
+	padding: 0.5rem 0;
+}
+
+.cart-table table tr td{
+	padding: 1.5rem 0;
+}
+
+.cart-table .product-pic img{
+	width: 5rem;
+}
+
+.cart-table .product-info{
+	text-align: left;
+}
+
+.input-group{
+	text-align: center;
+}
+
+.input-group input{
+	width: 4rem;
+	padding: 2px;
+	text-align: center;
+}
+
+.input-group input:focus{
+	box-shadow: none;
+}
+
+.input-group button:focus{
+	box-shadow: none;
+}
+
+.total-price{
+	text-align: right;
+	padding-right: 2rem;
+	color: #2fce98;
+	font-size: 2rem;
+}
+
+.is-form{
+	border: none;
+	background: none
+}
+
+.is-form:focus{
+	border: none;
+	outline: none;
+}
+
+.remove-product{
+	background: none;
+	border: none;
+}

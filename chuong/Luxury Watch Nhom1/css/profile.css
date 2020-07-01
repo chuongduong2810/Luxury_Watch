@@ -1,0 +1,165 @@
+.profile-page-title{
+	margin-top: 4rem;
+	background: #4a4a4a;
+	padding: 4rem 4rem 2rem 4rem;
+	color: #fff;
+	text-align: center;
+}
+label
+{
+	margin: 0 24px 0 12px;
+	justify-content: flex-end;
+	min-width: 146px;
+	display: flex;
+}
+.input-long
+{
+	min-width: 432px;
+}
+.gender-label
+{
+	justify-content: flex-start;
+	min-width: 10px;
+}
+.left-header{
+	margin-top: 24px;
+}
+.left-header__avatar
+{
+	width: 40px;
+}
+.left-header__right{
+	margin-left:14px;
+}
+.left-header__right-edit a
+{
+    color:#a7a7a7!important;
+}
+.info-input
+{
+	margin:42px 0;
+}
+
+.right-part
+{
+	border: 1px solid #ccc;
+	margin-top: 12px;
+	padding: 12px;
+}
+
+.left-body__main-list
+{
+	list-style: none;
+
+}
+.user-icon
+{
+	color: yellow;
+}
+.history-icon
+{
+	color: green;
+}
+
+.avatar-uploader
+{
+	border-left: 1px solid #ddd;
+	padding: 12px 12px 170px 12px;
+}
+.avatar-uploader__text
+{
+	color:#ccc;
+	font-size: 12px;
+}
+.btn-save
+{
+	border: none;
+	background-color: #2fce98;
+    border-radius: 0px!important;
+    margin-left: 76px;
+    padding: 6px 34px!important;
+}
+.btn-save:hover
+{
+	background-color: #2ab486;
+}
+.btn-save:focus
+{
+	background-color: #26a57b;
+}
+.btn-save:active
+{
+	background-color: #26a57b!important;
+}
+.btn-select-avt
+{
+	border: none;
+	background-color: #2fce98;
+    border-radius: 0px!important;
+    padding: 6px 34px!important;
+}
+.btn-select-avt:hover
+{
+	background-color: #25a178;
+}
+.btn-select-avt:focus
+{
+	background-color: #26a57b;
+}
+.btn-select-avt:active
+{
+	background-color: #26a57b!important;
+}
+.active
+{
+	color:#2ab486!important;
+}
+.left-body__main-list-profile-container li
+{
+	list-style: none;
+	
+}
+.left-body__main-list-profile-container li a
+{
+	text-decoration: none;
+	color: rgb(85, 85, 85);
+}
+.left-body__main-list li a
+{
+	text-decoration: none;
+	color: rgb(85, 85, 85);
+}
+.left-header__right-edit a
+{
+	text-decoration: none;
+	color: rgb(85, 85, 85);
+}
+#avt-preview
+{
+	border: 1px solid #ccc;
+    box-shadow: 0px 4px 10px #ccc;
+}
+#email-change-input,
+#number-change-input
+{
+	min-width: 400px;
+}
+#btn-cancel-change-email,
+#btn-cancel-change-number
+{
+	font-size: 16px;
+    margin-top: 8px;
+	padding: 0 7px;
+	filter: brightness(1.8);
+}
+/* Input number with no arrow */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}

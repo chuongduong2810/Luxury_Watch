@@ -1,0 +1,16 @@
+table th 
+{
+    border-right:1px solid #ddd;
+}
+.btn-back
+{
+    text-decoration: none;
+    color:#212529;
+}
+.btn-back:hover,
+.btn-back:focus,
+.btn-back:active
+{
+    color:#26a57b;
+    text-decoration: none;
+}

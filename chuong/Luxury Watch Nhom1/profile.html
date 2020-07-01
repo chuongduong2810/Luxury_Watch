@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Luxury Watch</title>
+
+	<!-- Bootstrap CDN -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<!-- Date picker -->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.7.1/css/bootstrap-datepicker.min.css" rel="stylesheet"/>
+	<!-- Slick -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" />
+
+	<!-- Font Awesome CDN -->
+	<script src="https://kit.fontawesome.com/255938e5d5.js" crossorigin="anonymous"></script>
+	<!-- Custom css -->
+	<link rel="stylesheet" type="text/css" href="./css/style.css">
+	<link rel="stylesheet" type="text/css" href="./css/profile.css">
+	<link rel="stylesheet" type="text/css" href="./css/cart.css">
+</head>
+<body>
+	<!-- Header -->
+	<header>
+		<div class="row">
+			<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-white">
+				<div class="container">
+					<!-- Brand -->
+					<a href="#" class="navbar-brand">
+						<i class="far fa-gem"></i>
+						<span class="h2 my-md-3 site-title">Luxury Watch</span>
+					</a>
+					<!-- Toggler/collapsibe Button -->
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+
+					<!-- Navbar links -->
+					<div class="collapse navbar-collapse" id="collapsibleNavbar">
+						<ul class="navbar-nav mx-auto mx-4">
+							<li class="nav-item active">
+								<a class="nav-link" href="#">Home</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">Collection</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">Contact</a>
+							</li>
+							<li class="nav-item hide">
+								<a class="nav-link" href="#">Account</a>
+							</li>
+							<li class="nav-item hide">
+								<a class="nav-link" href="#">Cart</a>
+							</li>
+						</ul>
+						<form class="form-inline">
+							<input class="form-control" type="search" placeholder="Nhập tên đồng hồ..." aria-label="Search">
+							<button class="btn btn-outline-success my-2 my-sm-0" type="submit" id="btn-search">
+								<i class="fa fa-search"></i>
+							</button>
+						</form>
+						<div class="icons">
+							<img src="img/user.svg" id="user-icon">
+							<img src="img/cart.svg" id="cart-icon">
+						</div>				
+					</div>
+				</div>
+				
+			</nav>
+
+		</div>
+		
+	</header>
+	<!-- End Header -->
+	<main>
+		<div class="profile-page-title">
+			<h1>Profile</h1>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3 col-sm-3">
+					<div class="row left-header">
+						<img src="./img/avatar-png-1.png" alt="avt" class="rounded-circle img-fluid left-header__avatar">
+						<div class="left-header__right">
+							<strong>Username</strong>
+							<div class="left-header__right-edit">
+								<a href="#">
+									<i class="fas fa-edit"></i> Sửa hồ sơ
+								</a>
+							</div>
+						</div>
+					</div>
+					<hr>
+					<br>
+					<div class="left-body">
+						<ul class="left-body__main-list">
+							<li class="left-body__main-list-profile">
+								<a href="#" class="active">
+									<i class="fa fa-user-circle user-icon" aria-hidden="true"></i>
+									Tài khoản của tôi
+								</a> 
+								<ul class="left-body__main-list-profile-container">
+									<li><a href="./profile.html" class="mb-2 active">Hồ sơ</a></li>
+									<li><a href="./address.html" class="mb-2">Địa chỉ</a></li>
+									<li><a href="./passwordchange.html" class="mb-2">Đổi mật khẩu</a></li>
+								</ul>
+							</li>
+							<li class="left-body__main-list-history">
+								<a href="/history.html">
+									<i class="fa fa-history history-icon" aria-hidden="true"></i>
+									Lịch sử mua hàng
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-md-9 col-sm-9 right-part">
+					<div class="right-part__header">
+						<h3>Hồ sơ của tôi</h3>
+						<span>Quản lý thông tin hồ sơ để bảo mật tài khoản</span>
+						<hr>
+					</div>
+					<div class="row">
+						<div class="col-md-9 right-part__body">
+							<div class="form-group">
+								<div class="row info-input">
+									<label for="">Tên đăng nhập</label> 
+									<span>chuongduong2810</span>
+								</div>
+								<div class="row info-input">
+									<label for="">Tên</label> 
+									<input class="input-long" type="text">
+								</div>
+	
+								<div class="row info-input">
+									<label for="">Email</label> 
+									<span id="email-change-text">dinhchuong1@gmail.com</span>
+									<input class="input-long" id="email-change-input" type="text" style="display: none;">
+									<i class="fas fa-times" id="btn-cancel-change-email" style="display: none;"></i>
+									<a id="btn-change-email" class="ml-3" href="javascript:void(0);">Thay đổi</a>
+								</div>
+	
+								<div class="row info-input">
+									<label for="">Số điện thoại</label> 
+									<span id="number-change-text">*******4425</span>
+									<input class="input-long" id="number-change-input" type="number" style="display: none;">
+									<i class="fas fa-times" id="btn-cancel-change-number" style="display: none;"></i>
+									<a id="btn-change-number" class="ml-3" href="javascript:void(0);">Thay đổi</a>
+								</div>
+								<div class="row info-input">
+									<label for="">Giới tính</label>
+									<div class="form-check">
+										<label class="form-check-label gender-label">
+										<input type="radio" class="form-check-input" name="gender" id="" value="checkedValue" checked>
+										Nam
+									  </label>
+									</div>
+									
+									<div class="form-check">
+										<label class="form-check-label gender-label">
+										<input type="radio" class="form-check-input" name="gender" id="" value="checkedValue" checked>
+										Nữ
+									  </label>
+									</div>
+									
+									<div class="form-check">
+										<label class="form-check-label gender-label">
+										<input type="radio" class="form-check-input" name="gender" id="" value="checkedValue" checked>
+										Khác
+									  </label>
+									</div>
+								</div>
+								<div class="row info-input">
+									<label for="">Ngày sinh</label> 
+									<input class="input-long" data-date-format="dd/mm/yyyy" id="datepicker">
+								</div>
+								<button type="submit" class="btn btn-success btn-save">Lưu</button>
+							</div>
+						</div>
+						<div class="col-md-3 right-part__avatar">
+							<div class="avatar-uploader">
+								<div class="avatar-uploader__img">
+									<img id="avt-preview" class="img-fluid rounded-circle" style="width: 200px;" src="./img/avatar-png-1.png" alt="avatar">
+								</div>
+								<input type="file" id="input-upload" style="display: none;">
+								<button type="button" name="" id="btn-upload-avt" class="btn btn-success btn-select-avt btn-block mt-4">Chọn ảnh</button>
+								
+								<div class="avatar-uploader__text mt-2">Dụng lượng tối đa 1 MB</div>
+							<div class="avatar-uploader__text">Định dạng:.JPEG, .PNG</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+	<br><br><br><br>
+
+	<!-- Footer -->
+	<footer>
+		<div class="footer-top">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-3 col-sm-6 col-xs-12 footer-1">
+						<h2>Luxury Watch</h2>
+						<p><b>Địa chỉ:</b> Trường Đại học CNTT</p> 
+						<p><b>SĐT: </b>0566666666</p>
+						<p><b>Email: </b>luxurywatch@gmail.com</p>  
+					</div>
+					<div class="col-md-3 col-sm-6 col-xs-12 footer-2">
+						<h2>Về chúng tôi</h2>
+						<ul>
+							<li><a href="#">Hướng dẫn mua hàng</a></li>
+							<li><a href="#">Chính sách bảo hành</a></li>
+							<li><a href="#">Chính sách đổi trả</a></li>
+							<li><a href="#">Chính sách giao hàng</a></li>
+							<li><a href="#">Kiểm định chất lượng</a></li>
+						</ul>
+					</div>
+					<div class="col-md-3 col-sm-6 col-xs-12 footer-3">
+						<h2>Theo dõi chúng tôi</h2>
+						<a href="#"><i class="fa fa-facebook"></i></a>
+						<a href="#"><i class="fa fa-instagram"></i></a>
+						<a href="#"><i class="fa fa-twitter"></i></a>
+						<a href="#"><i class="fa fa-pinterest"></i></a>
+					</div>
+					<div class="col-md-3 col-sm-6 col-xs-12 footer-4">
+						<h2>Đăng ký</h2>
+						<p>Để lại email để chúng tôi gửi thông báo về những sản phẩm mới nhất.</p>
+						<form>
+							<input class="email" type="email">
+							<input class="submit" type="submit" value="Subcribe">
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer-bottom">
+			<div>
+				<p>All right reserved by Lê Đình Nam © 2020</p>
+			</div>
+		</div>
+	</footer>
+	<!-- End footer -->
+
+	<!-- Bootstrap JS -->
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.7.1/js/bootstrap-datepicker.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+	<!-- Slick JS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+	<script>
+		$(".slider").slick({
+			centerMode: true,
+			slidesToShow: 4,
+			dots: true,
+			autoplay: true,
+			autoplaySpeed: 2000,
+			responsive: [
+			{
+				breakpoint: 1024,
+				settings: {
+					slidesToShow: 3
+				}
+			},
+			{
+				breakpoint: 994,
+				settings: {
+					slidesToShow: 2
+				}
+			},
+			{
+				breakpoint: 680,
+				settings: {
+					slidesToShow: 1
+				}
+			} 
+			]
+		},)
+	</script>
+	<script type="text/javascript">
+		$('#datepicker').datepicker({
+			weekStart: 1,
+			daysOfWeekHighlighted: "6,0",
+			autoclose: true,
+			todayHighlight: true,
+		});
+		$('#datepicker').datepicker("setDate", new Date());
+	</script>
+	<script>
+		$(document).ready(function () {
+			$('#btn-upload-avt').click(function () {
+				$('#input-upload').click();
+			})
+			//Preview avatar upload
+			function readURL(input) {
+			if (input.files && input.files[0]) {
+					var reader = new FileReader();
+					
+					reader.onload = function(e) {
+					$('#avt-preview').attr('src', e.target.result);
+					}
+					
+					reader.readAsDataURL(input.files[0]); // convert to base64 string
+				}
+			}
+
+			$("#input-upload").change(function() {
+				readURL(this);
+			});
+
+			//Change email,phone number
+			$('#btn-change-email').click(function () { 
+				$('#btn-change-email').hide();
+				$('#email-change-text').hide();
+				$('#email-change-input').show();
+				$('#email-change-input').val($('#email-change-text').text());
+				$('#btn-cancel-change-email').show();
+			})
+			$('#btn-change-number').click(function () { 
+				$('#btn-change-number').hide();
+				$('#number-change-text').hide();
+				$('#number-change-input').show();
+				$('#number-change-input').val($('#number-change-text').text());
+				$('#btn-cancel-change-number').show();
+			})
+
+			//Btn-cancel
+			$('#btn-cancel-change-email').click(function () {
+				$('#btn-change-email').show();
+				$('#email-change-text').show();
+				$('#email-change-input').hide();
+				$('#btn-cancel-change-email').hide();
+			  })
+
+			$('#btn-cancel-change-number').click(function () {
+				$('#btn-change-number').show();
+				$('#number-change-text').show();
+				$('#number-change-input').hide();
+				$('#btn-cancel-change-number').hide();
+			})
+
+			
+		});
+		
+	</script>
+</body>
+</html>
+

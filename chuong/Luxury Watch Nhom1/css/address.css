@@ -1,0 +1,82 @@
+.float-left
+{
+    float:left;
+}
+.right-part__body-info
+{
+    max-width: 400px;
+}
+.right-part__body-btn
+{
+    margin-left: 80px;
+}
+.right-part__body-btn-1
+{
+    justify-content: flex-end;
+    font-size: 12px;
+    margin-left: 40px;
+    margin-bottom: 16px;
+    width: 115px;
+}
+.right-part__body-btn-2
+{
+    min-width: 160px;
+    font-size: 12px;
+    background-color: #2fce98;
+    border-radius: 0px!important;
+    border:none;
+    justify-content: flex-end;
+}
+.right-part__body-label label
+{
+    color:#a7a7a7;
+}
+.right-part__body-btn-2:hover
+{
+    font-size: 12px;
+    background-color: #2ab486;
+    border-radius: 0px!important;
+    border:none;
+}
+.right-part__body-btn-2:focus
+{
+    font-size: 12px;
+    background-color: #2ab486;
+    border-radius: 0px!important;
+    border:none;
+}
+.right-part__body-btn-2:active
+{
+    font-size: 12px;
+    background-color: #2ab486!important;
+    border-radius: 0px!important;
+    border:none;
+}
+.btn-new-address
+{
+    line-height: 36px;
+}
+.default-label
+{
+    display:inline-block;
+    font-size: 12px;
+    border: 1px solid #ccc;
+    color: white;
+    border-radius: 4px;
+    background-color:#2fce98;
+    padding: 4px 4px;
+}
+.address-label
+{
+    display:inline-block;
+    font-size: 12px;
+    border: 1px solid red;
+    color: red;
+    border-radius: 50px;
+    background-color:white;
+    padding: 4px 4px;
+}
+.left-header__right-edit a
+{
+    color:#a7a7a7!important;
+}

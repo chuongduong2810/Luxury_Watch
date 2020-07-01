@@ -1,0 +1,25 @@
+.history-product
+{
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 12px;
+}
+.history-product__name{
+    transform: translateY(30%);
+    font-weight: 700;
+    margin: 0 100px;
+    max-width: 240px;
+}
+.history-product__quantity{
+    transform: translateY(30%);
+    margin:0 100px 0 10px;
+}
+.history-product__price{
+    transform: translateY(30%);
+    font-weight: 700;
+}
+.history-product__buytime{
+    padding: 4px;
+    color: #adadad;
+    font-style: italic;
+}

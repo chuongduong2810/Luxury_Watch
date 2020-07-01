@@ -1,0 +1,129 @@
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+input
+{
+    padding: 24px!important;
+}
+.brand
+{
+    text-decoration: none;
+    color: black;
+    font-size: 42px;
+    font-weight: 600;
+}
+.brand:hover
+{
+    text-decoration: none;
+    color:black;
+}
+.path__link:hover
+{
+    text-decoration: none;
+}
+
+.icon-chevron
+{
+    margin-top: 6px;
+    filter: brightness(3.4);
+    font-size: 12px;
+}
+.path__link
+{
+
+}
+
+.product-name
+{
+    max-width: 140px;
+}
+.product-quantity
+{
+
+}
+.product-price
+{
+    margin-left:40px;
+}
+.ship-fee
+{
+    justify-content: space-between;
+    margin: 0 2px;
+}
+.temp-total
+{
+    justify-content: space-between;
+    margin: 0 2px;
+}
+.total
+{
+    justify-content: space-between;
+    margin: 0 2px;
+}
+.total-price
+{
+    font-weight: 600;
+    font-size: 20px;
+}
+.right-part
+{
+    background-color: rgb(246, 246, 246);
+    border-left: 1px solid rgba(207, 205, 205, 0.667);
+}
+.product-img
+{
+    border: 1px solid #ccc;
+    padding: 4px;
+    border-radius: 6px;
+    background-color: white;
+}
+.btn-confirm
+{
+    padding: 14px 40px 14px 40px;
+    background-color: #2fce98;
+    border:none;
+}
+.btn-confirm:hover,
+.btn-confirm:focus,
+.btn-confirm:active
+{
+    background-color: #26a57b;
+}
+
+.form-check-ship
+{
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    padding: 14px;
+    margin:16px 0;
+}
+.form-check-payment
+{
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    padding: 14px;
+    margin:16px 0;
+}
+
+.form-check-info
+{
+    padding: 20px;
+    background-color: #fafafa;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+}
+.form-check-ship-content
+{
+    display:flex;
+}
+.price-ship
+{
+    margin-left:400px;
+}
